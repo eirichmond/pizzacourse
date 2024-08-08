@@ -34,9 +34,47 @@
 		},
 		"layout": {
 			"contentSize": "960px",
-			"wideSize": "1100px"
+			"wideSize": "1200px"
 		},
 		"spacing": {
+			"customSpacingSize": false,
+			"defaultSpacingSizes": false,
+			"spacingScale": {
+				"theme": {
+					"increment": 1.5,
+					"mediumStep": 3,
+					"operator": "*",
+					"steps": 5,
+					"unit": "rem"
+				}
+			},
+			"spacingSizes": [
+				{
+					"name": "X-Small",
+					"size": "1.33rem",
+					"slug": "30"
+				},
+				{
+					"name": "Small",
+					"size": "2rem",
+					"slug": "40"
+				},
+				{
+					"name": "Medium",
+					"size": "3rem",
+					"slug": "50"
+				},
+				{
+					"name": "Large",
+					"size": "4.5rem",
+					"slug": "60"
+				},
+				{
+					"name": "X-Large",
+					"size": "6.75rem",
+					"slug": "70"
+				}
+			],
 			"units": [
 				"%",
 				"em",
@@ -52,102 +90,87 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Open Sans",
+							"fontFamily": "Cabin",
 							"fontStyle": "normal",
-							"fontWeight": "300",
+							"fontWeight": "700",
 							"src": [
-								"file:./assets/fonts/open-sans_normal_300.ttf"
+								"file:./assets/fonts/u-4X0qWljRw-PfU81xCKCpdpbgZJl6XFpfEd7eA9BIxxkbqDL7Svxm7rE_s.woff2"
 							]
 						},
 						{
-							"fontFamily": "Open Sans",
+							"fontFamily": "Cabin",
 							"fontStyle": "normal",
-							"fontWeight": "500",
+							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/open-sans_normal_500.ttf"
+								"file:./assets/fonts/u-4X0qWljRw-PfU81xCKCpdpbgZJl6XFpfEd7eA9BIxxkV2EL7Svxm7rE_s.woff2"
 							]
 						},
 						{
-							"fontFamily": "Open Sans",
-							"fontStyle": "normal",
-							"fontWeight": "800",
-							"src": [
-								"file:./assets/fonts/open-sans_normal_800.ttf"
-							]
-						},
-						{
-							"fontFamily": "Open Sans",
+							"fontFamily": "Cabin",
 							"fontStyle": "italic",
-							"fontWeight": "300",
+							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/open-sans_italic_300.ttf"
+								"file:./assets/fonts/u-4V0qWljRw-Pd815fNqc8T_wAFcX-c37MPiNYlWniJ2hJXHx_Klx0zuA_u1Bg.woff2"
+							]
+						},
+						{
+							"fontFamily": "Cabin",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/u-4V0qWljRw-Pd815fNqc8T_wAFcX-c37MPiNYlWniJ2hJXHIPWlx0zuA_u1Bg.woff2"
 							]
 						}
 					],
-					"fontFamily": "Open Sans",
-					"slug": "open-sans"
+					"fontFamily": "Cabin, sans-serif",
+					"name": "Cabin",
+					"slug": "cabin"
 				},
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Antonio",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"file:./assets/fonts/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVyW9htNY2DwSXlM.woff2"
-							]
-						},
-						{
-							"fontFamily": "Antonio",
+							"fontFamily": "Anton",
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVxx8RtNY2DwSXlM.woff2"
-							]
-						},
-						{
-							"fontFamily": "Antonio",
-							"fontStyle": "normal",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVxx8BtNY2DwSXlM.woff2"
+								"file:./assets/fonts/1Ptgg87LROyAm0Kx8i4gS7lu.woff2"
 							]
 						}
 					],
-					"fontFamily": "Antonio, sans-serif",
-					"name": "Antonio",
-					"slug": "antonio"
+					"fontFamily": "Anton, sans-serif",
+					"name": "Anton",
+					"slug": "anton"
 				}
 			],
 			"fontSizes": [
 				{
 					"fluid": false,
 					"name": "Small",
-					"size": "0.8rem",
+					"size": "1.2rem",
 					"slug": "small"
 				},
 				{
 					"fluid": false,
 					"name": "Medium",
-					"size": "1rem",
+					"size": "1.5rem",
 					"slug": "medium"
 				},
 				{
 					"fluid": {
-						"max": "1.85rem",
-						"min": "1.25rem"
+						"max": "2rem",
+						"min": "1.5rem"
 					},
 					"name": "Large",
-					"size": "1.85rem",
+					"size": "2rem",
 					"slug": "large"
 				},
 				{
 					"fluid": {
-						"max": "2.5rem",
-						"min": "1.85rem"
+						"max": "3rem",
+						"min": "2.5rem"
 					},
 					"name": "Extra Large",
-					"size": "2.5rem",
+					"size": "3rem",
 					"slug": "x-large"
 				},
 				{
@@ -161,16 +184,24 @@
 				}
 			]
 		},
-		"useRootPaddingAwareAlignments": false
+		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
 		"blocks": {
 			"core/button": {
+				"border": {
+					"radius": ".7rem"
+				},
 				"color": {
 					"background": "var(--wp--preset--color--accent)"
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
 			"core/post-title": {
@@ -189,6 +220,10 @@
 							"textDecoration": "none"
 						}
 					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--anton)",
+					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			}
 		},
@@ -199,7 +234,7 @@
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--antonio)"
+					"fontFamily": "var(--wp--preset--font-family--cabin)"
 				}
 			},
 			"link": {
@@ -214,6 +249,7 @@
 			}
 		},
 		"spacing": {
+			"blockGap": "1rem",
 			"padding": {
 				"bottom": "0px",
 				"left": "20px",
@@ -222,7 +258,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--open-sans)",
+			"fontFamily": "var(--wp--preset--font-family--cabin)",
 			"fontSize": "var(--wp--preset--font-size--medium)"
 		}
 	},
