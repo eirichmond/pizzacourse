@@ -9,52 +9,87 @@
 			"customFontSize": false,
 			"defaultFontSizes": false,
 			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "Arial, Helvetica, sans-serif",
+					"name": "Body",
+					"slug": "body"
+				},
+				{
+					"fontFamily": "Impact, sans-serif",
+					"name": "Heading",
+					"slug": "heading"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "SpicyPizza",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": "file:./assets/fonts/spicypizza.woff2"
+						}
+					],
+					"fontFamily": "\"Spicy Pizza\", sans-serif",
+					"name": "Spicy Pizza",
+					"slug": "spicypizza"
+				}
+			],
 			"fontSizes": [
 				{
 					"name": "X Small",
-					"slug": "x-small",
-					"size": ".5rem"
+					"size": ".5rem",
+					"slug": "x-small"
 				},
 				{
 					"name": "Small",
-					"slug": "small",
-					"size": ".8rem"
+					"size": ".8rem",
+					"slug": "small"
 				},
 				{
 					"name": "Normal",
-					"slug": "normal",
-					"size": "1rem"
+					"size": "1rem",
+					"slug": "normal"
 				},
 				{
 					"name": "Medium",
-					"slug": "medium",
-					"size": "1.3rem"
+					"size": "1.3rem",
+					"slug": "medium"
 				},
 				{
 					"fluid": {
-						"max": "6rem",
+						"max": "2.5rem",
 						"min": "2rem"
 					},
 					"name": "Large",
-					"slug": "large",
-					"size": "2rem"
+					"size": "2rem",
+					"slug": "large"
 				},
 				{
 					"fluid": false,
 					"name": "X Large",
-					"slug": "x-large",
-					"size": "96px"
+					"size": "96px",
+					"slug": "x-large"
 				},
 				{
 					"name": "XXLarge",
-					"slug": "xx-large",
-					"size": "4rem"
+					"size": "4rem",
+					"slug": "xx-large"
 				}
 			]
 		},
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--body)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--spicypizza)"
+				}
+			}
+		},
 		"spacing": {
 			"padding": {
 				"bottom": "0",
